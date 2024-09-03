@@ -18,6 +18,10 @@ public class Main {
         products.add(book);
         products.add(electronics);
 
-
+        BigDecimal total = new BigDecimal(0);
+        for( AbstractProduct product : products) {
+            total = total.add(product.getPrice());
+        }
+        System.out.println(total);
     }
 }
