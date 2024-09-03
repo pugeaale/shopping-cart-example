@@ -1,16 +1,23 @@
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
         System.out.println("Ola Ironhackers !");
 
-        Book b = new Book("java 101", new BigDecimal("101.01"));
+        Book book = new Book("java 101", new BigDecimal("101.01"));
 
-        System.out.println(b);
+        System.out.println(book);
 
-        Electronics e = new Electronics("laptop" , new BigDecimal("999.99"));
+        Electronics electronics = new Electronics("laptop" , new BigDecimal("999.99"));
 
-        System.out.println(e);
+        System.out.println(electronics);
+
+        ArrayList<AbstractProduct> products = new ArrayList<AbstractProduct>();
+        products.add(book);
+        products.add(electronics);
+
+
     }
 }
